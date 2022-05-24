@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d7badbb-2d1a-482f-836a-9869fabffc56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculation/CalculatorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculation/CalculationChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculation/CalculatorChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculation/SwitchCalculationChoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Blanket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Blanket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BlanketBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BlanketBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LargeBlanketCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculation/LargeBlanketCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MediumBlanketCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculation/MediumBlanketCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PriceCalculator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProjectBlanketSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectBlanketSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SmallBlanketCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculation/SmallBlanketCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -80,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653377122979</updated>
-      <workItem from="1653377124565" duration="12037000" />
+      <workItem from="1653377124565" duration="16658000" />
     </task>
     <servers />
   </component>
