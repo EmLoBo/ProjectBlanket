@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d7badbb-2d1a-482f-836a-9869fabffc56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PriceCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProjectBlanketSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectBlanketSystem.java" afterDir="false" />
     </list>
@@ -73,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653377122979</updated>
-      <workItem from="1653377124565" duration="8598000" />
+      <workItem from="1653377124565" duration="9630000" />
     </task>
     <servers />
   </component>

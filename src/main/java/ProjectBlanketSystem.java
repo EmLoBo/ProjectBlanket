@@ -22,30 +22,17 @@ public class ProjectBlanketSystem {
     private int calculatePrice(Blanket blanket) {
         Size size = blanket.getSize();
         int price = 0;
-        int featurePrice = 5;
-        int featuresCount = blanket.getFeatures().size();
+        PriceCalculator priceCalculator = new PriceCalculator();
 
         switch (size) {
             case SMALL:
-                if (featuresCount > 0) {
-                    price = (featuresCount * featurePrice) + 50;
-                } else {
-                    price = 50;
-                }
+                price=priceCalculator.getPriceSmallBlanket(blanket);
                 break;
             case MEDIUM:
-                if (featuresCount > 0) {
-                    price = (featuresCount * featurePrice) + 70;
-                } else {
-                    price = 70;
-                }
+                price = priceCalculator.getPriceMediumBlanket(blanket);
                 break;
             case LARGE:
-                if (featuresCount > 0) {
-                    price = (featuresCount * featurePrice) + 90;
-                } else {
-                    price = 90;
-                }
+                price = priceCalculator.getPriceLargeBlanket(blanket);
                 break;
             default:
                 throw new IllegalStateException("Unknow size" + size);
@@ -53,6 +40,7 @@ public class ProjectBlanketSystem {
         System.out.println("Price" + price);
         return price;
     }
+
 
     private Blanket makeBlanket() {
         try (Scanner sc = new Scanner(System.in)) {
