@@ -21,22 +21,23 @@ public class ProjectBlanketSystem {
 
     private int calculatePrice(Blanket blanket) {
         Size size = blanket.getSize();
-        int price = 0;
-        PriceCalculator priceCalculator = new PriceCalculator();
+        PriceCalculator priceCalculator;
 
         switch (size) {
             case SMALL:
-                price=priceCalculator.getPriceSmallBlanket(blanket);
+                priceCalculator = new SmallBlanketCalculator();
                 break;
             case MEDIUM:
-                price = priceCalculator.getPriceMediumBlanket(blanket);
+                priceCalculator = new MediumBlanketCalculator();
                 break;
             case LARGE:
-                price = priceCalculator.getPriceLargeBlanket(blanket);
+                priceCalculator = new LargeBlanketCalculator();
                 break;
             default:
                 throw new IllegalStateException("Unknow size" + size);
         }
+
+        int price = priceCalculator.getPrice(blanket);
         System.out.println("Price" + price);
         return price;
     }
