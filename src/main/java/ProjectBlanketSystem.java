@@ -15,10 +15,46 @@ public class ProjectBlanketSystem {
     void run() {
         System.out.println("System is running");
 
-        makeBlanket();
+        Blanket blanket = makeBlanket();
+        calculatePrice(blanket);
     }
 
-    private void makeBlanket() {
+    private int calculatePrice(Blanket blanket) {
+        Size size = blanket.getSize();
+        int price = 0;
+        int featurePrice = 5;
+        int featuresCount = blanket.getFeatures().size();
+
+        switch (size) {
+            case SMALL:
+                if (featuresCount > 0) {
+                    price = (featuresCount * featurePrice) + 50;
+                } else {
+                    price = 50;
+                }
+                break;
+            case MEDIUM:
+                if (featuresCount > 0) {
+                    price = (featuresCount * featurePrice) + 70;
+                } else {
+                    price = 70;
+                }
+                break;
+            case LARGE:
+                if (featuresCount > 0) {
+                    price = (featuresCount * featurePrice) + 90;
+                } else {
+                    price = 90;
+                }
+                break;
+            default:
+                throw new IllegalStateException("Unknow size" + size);
+        }
+        System.out.println("Price" + price);
+        return price;
+    }
+
+    private Blanket makeBlanket() {
         try (Scanner sc = new Scanner(System.in)) {
             BlanketBuilder builder = new BlanketBuilder();
 
@@ -32,7 +68,6 @@ public class ProjectBlanketSystem {
             String sizeValue = sc.nextLine();
             builder.withSize(sizeValue);
 
-
             while (true) {
                 System.out.println("Which features you choose: EMBROIDERY_NAME, NICE_PACKAGING, POST_CARD. NO finish adding features");
                 builder.addFeatures(Feature.valueOf(sc.nextLine()));
@@ -44,13 +79,13 @@ public class ProjectBlanketSystem {
                     break;
                 }
             }
-           // Blanket blanket = new Blanket(size, firstTextilColor, secondTextilColor, features);
+            // Blanket blanket = new Blanket(size, firstTextilColor, secondTextilColor, features);
             Blanket blanket = builder.build();
             System.out.println(blanket);
+            return blanket;
         }
 
     }
-
 
 
 }
