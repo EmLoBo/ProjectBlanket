@@ -1,10 +1,10 @@
-import model.Feature;
-import model.FirstTextilColor;
-import model.SecondTextilColor;
-import model.Size;
+import calculation.CalculatorStrategy;
+import calculation.LargeBlanketCalculator;
+import calculation.MediumBlanketCalculator;
+import calculation.CalculatorStrategy;
+import calculation.SmallBlanketCalculator;
+import model.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ProjectBlanketSystem {
@@ -21,8 +21,16 @@ public class ProjectBlanketSystem {
 
     private int calculatePrice(Blanket blanket) {
         Size size = blanket.getSize();
-        PriceCalculator priceCalculator;
 
+        CalculatorStrategy priceCalculator = choice(size);
+        int price = priceCalculator.getPrice(blanket);
+
+        System.out.println("Price" + price);
+        return price;
+    }
+
+    private CalculatorStrategy choice(Size size) {
+        CalculatorStrategy priceCalculator;
         switch (size) {
             case SMALL:
                 priceCalculator = new SmallBlanketCalculator();
@@ -36,10 +44,7 @@ public class ProjectBlanketSystem {
             default:
                 throw new IllegalStateException("Unknow size" + size);
         }
-
-        int price = priceCalculator.getPrice(blanket);
-        System.out.println("Price" + price);
-        return price;
+        return priceCalculator;
     }
 
 
@@ -68,7 +73,7 @@ public class ProjectBlanketSystem {
                     break;
                 }
             }
-            // Blanket blanket = new Blanket(size, firstTextilColor, secondTextilColor, features);
+            // model.Blanket blanket = new model.Blanket(size, firstTextilColor, secondTextilColor, features);
             Blanket blanket = builder.build();
             System.out.println(blanket);
             return blanket;

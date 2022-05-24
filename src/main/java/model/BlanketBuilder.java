@@ -1,7 +1,6 @@
-import model.Feature;
-import model.FirstTextilColor;
-import model.SecondTextilColor;
-import model.Size;
+package model;
+
+import model.*;
 
 import java.util.ArrayList;
 import java.util.List;

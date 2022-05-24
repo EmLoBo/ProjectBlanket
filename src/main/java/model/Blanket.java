@@ -1,3 +1,5 @@
+package model;
+
 import model.Feature;
 import model.FirstTextilColor;
 import model.SecondTextilColor;
@@ -36,7 +38,7 @@ public class Blanket {
 
     @Override
     public String toString() {
-        return "Blanket{" +
+        return "model.Blanket{" +
                 "size=" + size +
                 ", firstTextilColor=" + firstTextilColor +
                 ", secondTextilColor=" + secondTextilColor +
