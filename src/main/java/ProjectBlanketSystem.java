@@ -21,13 +21,14 @@ public class ProjectBlanketSystem {
     private void makeBlanket() {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Give me first textil color: RED, BLACK, BLUE");
-            FirstTextilColor firstTextilColor = FirstTextilColor.valueOf(sc.nextLine());
+            FirstTextilColor firstTextilColor = withFirstTextilColor(sc.nextLine());
 
             System.out.println("Give me second textil color: RED, BLACK, BLUE");
-            SecondTextilColor secondTextilColor = SecondTextilColor.valueOf(sc.nextLine());
+            SecondTextilColor secondTextilColor = withSecondTextilColor(sc.nextLine());
 
             System.out.println("Give me size: SMALL, MEDIUM, LARGE");
-            Size size = Size.valueOf(sc.nextLine());
+            String sizeValue = sc.nextLine();
+            Size size = withSize(sizeValue);
 
             List<Feature> features = new ArrayList<>();
             while (true) {
@@ -46,4 +47,27 @@ public class ProjectBlanketSystem {
         }
 
     }
+
+// metody ustawiające wartości domyślne
+    private Size withSize(String sizeValue) {
+        if (sizeValue.isBlank()) {
+            sizeValue = "MEDIUM";
+        }
+        return Size.valueOf(sizeValue);
+    }
+
+    private FirstTextilColor withFirstTextilColor(String firstTextilColorValue) {
+        if (firstTextilColorValue.isBlank()) {
+            firstTextilColorValue = "RED";
+        }
+        return FirstTextilColor.valueOf(firstTextilColorValue);
+    }
+
+    private SecondTextilColor withSecondTextilColor(String secondTextilColorValue) {
+        if (secondTextilColorValue.isBlank()) {
+            secondTextilColorValue = "BLACK";
+        }
+        return SecondTextilColor.valueOf(secondTextilColorValue);
+    }
+
 }
