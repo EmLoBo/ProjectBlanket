@@ -1024,19 +1024,19 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="278" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="279" parent="1" name="onljee07Unit">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="280" parent="1" name="onljee7dB">
-      <CollationName>utf8mb4_unicode_ci</CollationName>
-    </schema>
-    <schema id="281" parent="1" name="performance_schema">
+    <schema id="279" parent="1" name="najszybsze_zwierzeta">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="282" parent="1" name="sys">
+    <schema id="280" parent="1" name="onljee07Unit">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="281" parent="1" name="onljee7dB">
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </schema>
+    <schema id="282" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="283" parent="1" name="zwierzeta">
+    <schema id="283" parent="1" name="sys">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="284" parent="1" name="debian-sys-maint">
@@ -1122,382 +1122,464 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="304" parent="289" name="id">
+    <table id="304" parent="279" name="najszybsze">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="305" parent="279" name="najszybszych10">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="306" parent="279" name="najwolniejsze_zwierzeta">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="307" parent="279" name="unikaty_najszybsze">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="308" parent="289" name="id">
       <AutoIncrement>23</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="305" parent="289" name="family_name">
+    <column id="309" parent="289" name="family_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="306" parent="289" name="nr_of_adults">
+    <column id="310" parent="289" name="nr_of_adults">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="307" parent="289" name="nr_of_children">
+    <column id="311" parent="289" name="nr_of_children">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="308" parent="289" name="nr_of_infants">
+    <column id="312" parent="289" name="nr_of_infants">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <key id="309" parent="289" name="PRIMARY">
+    <key id="313" parent="289" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="310" parent="290" name="id">
+    <column id="314" parent="290" name="id">
       <AutoIncrement>17</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="311" parent="290" name="age">
+    <column id="315" parent="290" name="age">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="312" parent="290" name="family_id">
+    <column id="316" parent="290" name="family_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="313" parent="290" name="family_name">
+    <column id="317" parent="290" name="family_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="314" parent="290" name="given_name">
+    <column id="318" parent="290" name="given_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
     </column>
-    <key id="315" parent="290" name="PRIMARY">
+    <key id="319" parent="290" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="316" parent="291" name="id">
+    <column id="320" parent="291" name="id">
       <AutoIncrement>4</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="317" parent="291" name="name">
+    <column id="321" parent="291" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="318" parent="291" name="PRIMARY">
+    <key id="322" parent="291" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="319" parent="292" name="id">
+    <column id="323" parent="292" name="id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <key id="320" parent="292" name="PRIMARY">
+    <key id="324" parent="292" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="321" parent="293" name="id">
+    <column id="325" parent="293" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="322" parent="293" name="email">
+    <column id="326" parent="293" name="email">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="323" parent="293" name="name">
+    <column id="327" parent="293" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <key id="324" parent="293" name="PRIMARY">
+    <key id="328" parent="293" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="325" parent="294" name="id">
+    <column id="329" parent="294" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="326" parent="294" name="family_name">
+    <column id="330" parent="294" name="family_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="327" parent="294" name="nr_of_adults">
+    <column id="331" parent="294" name="nr_of_adults">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="328" parent="294" name="nr_of_children">
+    <column id="332" parent="294" name="nr_of_children">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="329" parent="294" name="nr_of_infants">
+    <column id="333" parent="294" name="nr_of_infants">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <key id="330" parent="294" name="PRIMARY">
+    <key id="334" parent="294" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="331" parent="295" name="id">
+    <column id="335" parent="295" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="332" parent="295" name="age">
+    <column id="336" parent="295" name="age">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="333" parent="295" name="family_id">
+    <column id="337" parent="295" name="family_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="334" parent="295" name="family_name">
+    <column id="338" parent="295" name="family_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="335" parent="295" name="given_name">
+    <column id="339" parent="295" name="given_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>5</Position>
     </column>
-    <key id="336" parent="295" name="PRIMARY">
+    <key id="340" parent="295" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="337" parent="296" name="id">
+    <column id="341" parent="296" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="338" parent="296" name="name">
+    <column id="342" parent="296" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="339" parent="296" name="PRIMARY">
+    <key id="343" parent="296" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="340" parent="297" name="id">
+    <column id="344" parent="297" name="id">
       <AutoIncrement>38</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="341" parent="297" name="name">
+    <column id="345" parent="297" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="342" parent="297" name="category_id">
+    <column id="346" parent="297" name="category_id">
       <DataType>bigint|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="343" parent="297" name="place_id">
+    <column id="347" parent="297" name="place_id">
       <DataType>bigint|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="344" parent="297" name="size_id">
+    <column id="348" parent="297" name="size_id">
       <DataType>bigint|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="345" parent="297" name="soil_id">
+    <column id="349" parent="297" name="soil_id">
       <DataType>bigint|0s</DataType>
       <Position>6</Position>
     </column>
-    <foreign-key id="346" parent="297" name="FKh1e3galssw92hfc2hm5e8rk58">
+    <foreign-key id="350" parent="297" name="FKh1e3galssw92hfc2hm5e8rk58">
       <ColNames>category_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>category</RefTableName>
     </foreign-key>
-    <foreign-key id="347" parent="297" name="FKetpnc6b150iwf0oloc0p9018u">
+    <foreign-key id="351" parent="297" name="FKetpnc6b150iwf0oloc0p9018u">
       <ColNames>place_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>place</RefTableName>
     </foreign-key>
-    <foreign-key id="348" parent="297" name="FKico559atwnwlhuwxb3jcc82jh">
+    <foreign-key id="352" parent="297" name="FKico559atwnwlhuwxb3jcc82jh">
       <ColNames>size_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>size</RefTableName>
     </foreign-key>
-    <foreign-key id="349" parent="297" name="FK5p3ia9k6hpsq9vsvvp30do8e2">
+    <foreign-key id="353" parent="297" name="FK5p3ia9k6hpsq9vsvvp30do8e2">
       <ColNames>soil_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>soil</RefTableName>
     </foreign-key>
-    <index id="350" parent="297" name="FKh1e3galssw92hfc2hm5e8rk58">
+    <index id="354" parent="297" name="FKh1e3galssw92hfc2hm5e8rk58">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="351" parent="297" name="FKetpnc6b150iwf0oloc0p9018u">
+    <index id="355" parent="297" name="FKetpnc6b150iwf0oloc0p9018u">
       <ColNames>place_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="352" parent="297" name="FKico559atwnwlhuwxb3jcc82jh">
+    <index id="356" parent="297" name="FKico559atwnwlhuwxb3jcc82jh">
       <ColNames>size_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="353" parent="297" name="FK5p3ia9k6hpsq9vsvvp30do8e2">
+    <index id="357" parent="297" name="FK5p3ia9k6hpsq9vsvvp30do8e2">
       <ColNames>soil_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="354" parent="297" name="PRIMARY">
+    <key id="358" parent="297" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="355" parent="298" name="id">
+    <column id="359" parent="298" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="356" parent="298" name="name">
+    <column id="360" parent="298" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="357" parent="298" name="PRIMARY">
+    <key id="361" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="358" parent="299" name="id">
+    <column id="362" parent="299" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="359" parent="299" name="name">
+    <column id="363" parent="299" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="360" parent="299" name="PRIMARY">
+    <key id="364" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="361" parent="300" name="id">
+    <column id="365" parent="300" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="362" parent="300" name="name">
+    <column id="366" parent="300" name="name">
       <DataType>varchar(255)|0s</DataType>
       <Position>2</Position>
     </column>
-    <key id="363" parent="300" name="PRIMARY">
+    <key id="367" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="364" parent="301" name="id">
+    <column id="368" parent="301" name="id">
       <AutoIncrement>30</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="365" parent="301" name="enabled">
+    <column id="369" parent="301" name="enabled">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="366" parent="301" name="password">
+    <column id="370" parent="301" name="password">
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="367" parent="301" name="username">
+    <column id="371" parent="301" name="username">
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="368" parent="301" name="latitude">
+    <column id="372" parent="301" name="latitude">
       <DataType>double|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="369" parent="301" name="longitude">
+    <column id="373" parent="301" name="longitude">
       <DataType>double|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="370" parent="301" name="first_name">
+    <column id="374" parent="301" name="first_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="371" parent="301" name="last_name">
+    <column id="375" parent="301" name="last_name">
       <DataType>varchar(255)|0s</DataType>
       <Position>8</Position>
     </column>
-    <index id="372" parent="301" name="UK_sb8bbouer5wak8vyiiy4pf2bx">
+    <index id="376" parent="301" name="UK_sb8bbouer5wak8vyiiy4pf2bx">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="373" parent="301" name="PRIMARY">
+    <key id="377" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="374" parent="301" name="UK_sb8bbouer5wak8vyiiy4pf2bx">
+    <key id="378" parent="301" name="UK_sb8bbouer5wak8vyiiy4pf2bx">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>UK_sb8bbouer5wak8vyiiy4pf2bx</UnderlyingIndexName>
     </key>
-    <column id="375" parent="302" name="user_id">
+    <column id="379" parent="302" name="user_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="376" parent="302" name="roles_id">
+    <column id="380" parent="302" name="roles_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="377" parent="302" name="FK55itppkw3i07do3h7qoclqd4k">
+    <foreign-key id="381" parent="302" name="FK55itppkw3i07do3h7qoclqd4k">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <foreign-key id="378" parent="302" name="FKj9553ass9uctjrmh0gkqsmv0d">
+    <foreign-key id="382" parent="302" name="FKj9553ass9uctjrmh0gkqsmv0d">
       <ColNames>roles_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>role</RefTableName>
     </foreign-key>
-    <index id="379" parent="302" name="FKj9553ass9uctjrmh0gkqsmv0d">
+    <index id="383" parent="302" name="FKj9553ass9uctjrmh0gkqsmv0d">
       <ColNames>roles_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="380" parent="302" name="PRIMARY">
+    <key id="384" parent="302" name="PRIMARY">
       <ColNames>user_id
 roles_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="381" parent="303" name="id">
+    <column id="385" parent="303" name="id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <key id="382" parent="303" name="PRIMARY">
+    <key id="386" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="387" parent="304" name="zwierze">
+      <DataType>char(20)|0s</DataType>
+      <DefaultExpression>&apos;nienazwany&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="388" parent="304" name="max_predkosc">
+      <DataType>int|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="389" parent="304" name="stan">
+      <DataType>char(10)|0s</DataType>
+      <DefaultExpression>&apos;nie podano&apos;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="390" parent="305" name="zwierze">
+      <DataType>char(20)|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="391" parent="305" name="max_predkosc">
+      <DataType>int|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="392" parent="305" name="stan">
+      <DataType>char(10)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="393" parent="306" name="zwierze">
+      <DataType>varchar(25)|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="394" parent="306" name="getunek">
+      <DataType>varchar(10)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="395" parent="306" name="predkosc">
+      <DataType>float(8,6 digit)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="396" parent="307" name="zwierze_id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="397" parent="307" name="zwierze">
+      <DataType>char(20)|0s</DataType>
+      <DefaultExpression>&apos;nienazwany&apos;</DefaultExpression>
+      <Position>2</Position>
+    </column>
+    <column id="398" parent="307" name="predkosc">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="399" parent="307" name="stan">
+      <DataType>char(10)|0s</DataType>
+      <DefaultExpression>&apos;nie podano&apos;</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <key id="400" parent="307" name="PRIMARY">
+      <ColNames>zwierze_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>

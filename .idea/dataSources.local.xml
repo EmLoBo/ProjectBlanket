@@ -14,6 +14,7 @@
           <node kind="schema">
             <name qname="@" />
             <name qname="myBase" />
+            <name qname="najszybsze_zwierzeta" />
           </node>
         </introspection-scope>
       </schema-mapping>
