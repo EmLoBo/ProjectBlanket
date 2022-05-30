@@ -16,6 +16,7 @@
             <name qname="myBase" />
             <name qname="najszybsze_zwierzeta" />
             <name qname="sakila" />
+            <name qname="books" />
           </node>
         </introspection-scope>
       </schema-mapping>
