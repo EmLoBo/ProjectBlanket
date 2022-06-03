@@ -3,15 +3,20 @@ package calculation;
 import model.Blanket;
 import model.Size;
 
+import java.time.Instant;
+
 public class CalculatorChoice {
 
     public int choice(Blanket blanket) {
         Size size = blanket.getSize();
-         CalculatorStrategy priceCalculator = choice(size);
+        CalculatorStrategy priceCalculator = choice(size);
+
         int price = priceCalculator.getPrice(blanket);
+
         System.out.println("Price" + price);
         return price;
     }
+
     public CalculatorStrategy choice(Size size) {
         CalculatorStrategy priceCalculator;
 
@@ -28,9 +33,10 @@ public class CalculatorChoice {
             default:
                 throw new IllegalStateException("Unknow size" + size);
         }
-        return priceCalculator;
+        return ExeciutionTimeWrapper(priceCalculator.getPrice(blanket));
     }
-
+    
+    
 
 
 }
