@@ -1,7 +1,6 @@
 package calculation;
 
-import model.Blanket;
-import model.Size;
+import model.*;
 
 import java.time.Instant;
 
